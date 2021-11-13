@@ -1,4 +1,4 @@
-import { CHANGE_SEARCH_FIELD 
+import { CHANGE_SEARCH_FIELD,
          REQUEST_ROBOTS_PENDING,
          REQUEST_ROBOTS_SUCCESS,
          REQUEST_ROBOTS_FAILED 
@@ -24,7 +24,7 @@ const initialStateRobots = {
      error: ''
 };
 
-export const requestRobots = (state = intitialStateRobots, action = {}) => {
+export const requestRobots = (state = initialStateRobots, action = {}) => {
      switch(action.type){
           case REQUEST_ROBOTS_PENDING:
                return Object.assign({}, state, { isPedning: true });
